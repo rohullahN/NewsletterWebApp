@@ -39,7 +39,7 @@ app.post("/", function(req, res){
     method: "POST",
     auth: "kool:"+process.env.API_KEY
   }
-
+console.log("hello");
   const request = https.request(url, options, function(response){
 
     if (response.statusCode ===200)
